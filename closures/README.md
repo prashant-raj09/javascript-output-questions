@@ -27,8 +27,8 @@ console.log(c1());
 3
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
-Each call to createCounter() creates a new closure with its own count.
-c1 and c2 do not share state.
+- Each call to createCounter() creates a new closure with its own count.
+- c1 and c2 do not share state.
 
 </details>
 
@@ -45,7 +45,7 @@ for (var i = 0; i < 3; i++) {
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
 var is function-scoped, not block-scoped.
-All callbacks reference the same i, whose final value is 3.
+All callbacks reference the same `i`, whose final value is 3.
 
 </details>
 
@@ -65,7 +65,7 @@ for (var i = 0; i < 3; i++) {
 2
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
-IIFE creates a new scope for each iteration, capturing the current value of i.
+IIFE creates a new scope for each iteration, capturing the current value of `i`.
 
 </details>
 
@@ -81,7 +81,7 @@ for (let i = 0; i < 3; i++) {
 2
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
-let is block-scoped, so each loop iteration gets its own i.
+let is block-scoped, so each loop iteration gets its own `i`.
 
 </details>
 
@@ -102,7 +102,7 @@ fn(20);
 30
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
-inner retains access to x even after outer has finished execution.
+inner retains access to `x` even after outer has finished execution.
 
 </details>
 
@@ -157,8 +157,8 @@ bar();
 10
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
-Closures are based on lexical scope, not call stack.
-foo captures x from the global scope.
+- Closures are based on lexical scope, not call stack.
+- foo captures `x` from the global scope.
 
 </details>
 
@@ -180,8 +180,8 @@ test();
 5
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
-Closures capture variables, not values.
-The updated value of x is logged.
+- Closures capture variables, not values.
+- The updated value of `x` is logged.
 
 </details>
 
