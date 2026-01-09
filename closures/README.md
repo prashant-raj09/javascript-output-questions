@@ -52,6 +52,7 @@ All callbacks reference the same i, whose final value is 3.
 ## 📌 Question 3: Fixing Closure with IIFE
 ```js
 for (var i = 0; i < 3; i++) {
+   // Immediately Invoked Function Expression (IIFE)
   (function (i) {
     setTimeout(() => console.log(i), 0);
   })(i);
