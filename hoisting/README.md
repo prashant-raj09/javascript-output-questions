@@ -119,7 +119,7 @@ undefined
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
 - Hoisting happens within function scope, not globally.
-Equivalent to:
+- Equivalent to:
 ```js
 function test() {
   var a;
