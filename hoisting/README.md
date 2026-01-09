@@ -27,3 +27,21 @@ console.log(a);
 a = 10;
 ```
 </details>
+
+## 📌 Question 2: let Hoisting (Temporal Dead Zone)
+
+```js
+console.log(a);
+let a = 10;
+```
+<details> <summary><b>✅ Output</b></summary>
+```pgsql
+ReferenceError: Cannot access 'a' before initialization
+```
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+let is hoisted but placed in the Temporal Dead Zone (TDZ)
+
+Accessing it before initialization throws an error
+
+</details>
