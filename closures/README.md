@@ -104,3 +104,35 @@ fn(20);
 inner retains access to x even after outer has finished execution.
 
 </details>
+
+## 📌 Question 6: Multiple Closures Sharing Same Scope
+```js
+function outer() {
+  let count = 0;
+
+  return {
+    increment() {
+      count++;
+      console.log(count);
+    },
+    decrement() {
+      count--;
+      console.log(count);
+    }
+  };
+}
+
+const counter = outer();
+counter.increment();
+counter.increment();
+counter.decrement();
+```
+<details> <summary><b>✅ Output</b></summary>
+1
+2
+1
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+Both functions share the same closure variable count.
+
+</details>
