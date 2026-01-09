@@ -63,3 +63,25 @@ Function declarations are fully hoisted
 Both function name and body are available before execution
 
 </details>
+
+## 📌 Question 4: Function Expression Hoisting
+
+```js
+foo();
+
+var foo = function () {
+  console.log("Hello");
+};
+```
+<details> <summary><b>✅ Output</b></summary>
+TypeError: foo is not a function
+
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+var foo is hoisted as undefined
+
+Function assignment happens later
+
+Calling undefined() causes a TypeError
+
+</details>
