@@ -136,3 +136,52 @@ counter.decrement();
 Both functions share the same closure variable count.
 
 </details>
+
+## 📌 Question 7: Closure Trap with Reassignment
+```js
+let x = 10;
+
+function foo() {
+  console.log(x);
+}
+
+function bar() {
+  let x = 20;
+  foo();
+}
+
+bar();
+```
+<details> <summary><b>✅ Output</b></summary>
+10
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+Closures are based on lexical scope, not call stack.
+foo captures x from the global scope.
+
+</details>
+
+## 📌 Question 8: Closure + setTimeout + Mutation
+
+```js
+function test() {
+  let x = 1;
+  setTimeout(() => {
+    console.log(x);
+  }, 1000);
+  x = 5;
+}
+
+test();
+```
+
+<details> <summary><b>✅ Output</b></summary>
+5
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+Closures capture variables, not values.
+The updated value of x is logged.
+
+</details>
+
+## 
