@@ -67,3 +67,19 @@ for (var i = 0; i < 3; i++) {
 IIFE creates a new scope for each iteration, capturing the current value of i.
 
 </details>
+
+##📌 Question 4: Closure with let
+```js
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 0);
+}
+```
+<details> <summary><b>✅ Output</b></summary>
+0
+1
+2
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+let is block-scoped, so each loop iteration gets its own i.
+
+</details>
