@@ -78,10 +78,10 @@ TypeError: foo is not a function
 
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
-var foo is hoisted as undefined
+# var foo is hoisted as undefined
 
-Function assignment happens later
+### Function assignment happens later
 
-Calling undefined() causes a TypeError
+### Calling undefined() causes a TypeError
 
 </details>
