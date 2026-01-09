@@ -35,7 +35,7 @@ console.log(a);
 let a = 10;
 ```
 <details> <summary><b>✅ Output</b></summary>
-```pgsql
+```
 ReferenceError: Cannot access 'a' before initialization
 ```
 </details> <details> <summary><b>🧠 Explanation</b></summary>
