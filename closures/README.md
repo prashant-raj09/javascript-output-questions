@@ -2,7 +2,7 @@
 
 ---
 
-## Question 1
+## Question 1: Basic Closure
 ```js
 function createCounter() {
   let count = 0;
@@ -29,5 +29,22 @@ console.log(c1());
 
 Each call to createCounter() creates a new closure with its own count.
 c1 and c2 do not share state.
+
+</details>
+
+## 📌 Question 2: Closure with var in Loop
+```js
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 0);
+}
+```
+<details> <summary><b>✅ Output</b></summary>
+3
+3
+3
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+var is function-scoped, not block-scoped.
+All callbacks reference the same i, whose final value is 3.
 
 </details>
