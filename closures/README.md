@@ -48,3 +48,22 @@ var is function-scoped, not block-scoped.
 All callbacks reference the same i, whose final value is 3.
 
 </details>
+
+## 📌 Question 3: Fixing Closure with IIFE
+```js
+for (var i = 0; i < 3; i++) {
+  (function (i) {
+    setTimeout(() => console.log(i), 0);
+  })(i);
+}
+```
+
+<details> <summary><b>✅ Output</b></summary>
+0
+1
+2
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+IIFE creates a new scope for each iteration, capturing the current value of i.
+
+</details>
