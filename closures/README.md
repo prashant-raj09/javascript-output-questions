@@ -68,7 +68,7 @@ IIFE creates a new scope for each iteration, capturing the current value of i.
 
 </details>
 
-##📌 Question 4: Closure with let
+## 📌 Question 4: Closure with let
 ```js
 for (let i = 0; i < 3; i++) {
   setTimeout(() => console.log(i), 0);
@@ -81,5 +81,26 @@ for (let i = 0; i < 3; i++) {
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
 let is block-scoped, so each loop iteration gets its own i.
+
+</details>
+
+## 📌 Question 5: Closure with Function Parameter
+```js
+function outer(x) {
+  return function inner(y) {
+    console.log(x + y);
+  };
+}
+
+const fn = outer(10);
+fn(5);
+fn(20);
+```
+<details> <summary><b>✅ Output</b></summary>
+15
+30
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+inner retains access to x even after outer has finished execution.
 
 </details>
