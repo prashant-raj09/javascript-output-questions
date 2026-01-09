@@ -18,7 +18,7 @@ console.log(c1());
 console.log(c1());
 console.log(c2());
 console.log(c1());
-
+```
 
 <details> <summary><b>✅ Output</b></summary>
 1
