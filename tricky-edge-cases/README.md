@@ -153,6 +153,50 @@ ReferenceError: arguments is not defined
 
 </details>
 
+## 📌 Question 8: `Event Loop + Closures + Hoisting`
+```js
+console.log(a);
+
+setTimeout(() => console.log("timeout"));
+
+Promise.resolve().then(() => {
+  console.log("promise1");
+  setTimeout(() => console.log("timeout2"));
+});
+
+var a = 10;
+
+(async function () {
+  console.log("async1");
+  await null;
+  console.log("async2");
+})();
+
+console.log("end");
+```
+<details> <summary><b>✅ Output</b></summary>
+undefined
+async1
+end
+promise1
+async2
+timeout
+timeout2
+
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+- var hoisting
+
+- Microtasks (`Promise`, `await`)
+
+- Macrotasks (`setTimeout`)
+
+- Execution order
+
+</details>
+
+
+
 ## ⭐ Interview Reality Check
 
 - These questions test language mastery, not memorization.
