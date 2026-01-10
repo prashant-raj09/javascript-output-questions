@@ -14,11 +14,12 @@ setTimeout(() => console.log("B"), 0);
 
 console.log("C");
 ```
-<details> <summary><b>✅ Output</b></summary>
+<details>
+<summary><b>✅ Output</b></summary>
 A
 C
 B
-<details>
+</details>
 
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
