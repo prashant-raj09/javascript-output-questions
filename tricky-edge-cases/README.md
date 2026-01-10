@@ -153,7 +153,7 @@ ReferenceError: arguments is not defined
 
 </details>
 
-## 📌 Question 8: `Event Loop + Closures + Hoisting`
+## 📌 Question 9: `Event Loop + Closures + Hoisting`
 ```js
 console.log(a);
 
