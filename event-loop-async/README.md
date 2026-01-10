@@ -18,6 +18,7 @@ console.log("C");
 A
 C
 B
+<details>
 </details> <details> <summary><b>🧠 Explanation</b></summary>
 
 - Synchronous code runs first
