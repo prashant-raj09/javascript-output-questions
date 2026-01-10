@@ -13,6 +13,7 @@ console.log(typeof null);
 <details> <summary><b>✅ Output</b></summary>
 object
 </details> <details> <summary><b>🧠 Explanation</b></summary>
+
 - This is a historical bug in JavaScript
 
 - `null` is a primitive, but typeof null returns "object"
@@ -48,6 +49,7 @@ console.log(arr);
 [1]
 
 </details> <details> <summary><b>🧠 Explanation</b></summary>
+
 - Reducing length truncates the array
 
 - Elements beyond the new length are removed
@@ -123,6 +125,7 @@ console.log(obj);
 { "1": "string one" }
 
 </details> <details> <summary><b>🧠 Explanation</b></summary>
+
 - Object keys are coerced to strings
 
 - Both keys become `"1"`
