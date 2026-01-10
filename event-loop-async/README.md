@@ -15,9 +15,9 @@ setTimeout(() => console.log("B"), 0);
 console.log("C");
 ```
 <details><summary><b>✅ Output</b></summary>
-A
-C
-B
+- A
+- C
+- B
 </details><details> <summary><b>🧠 Explanation</b></summary>
 
 - Synchronous code runs first
