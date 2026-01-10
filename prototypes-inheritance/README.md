@@ -40,7 +40,9 @@ console.log(a.x);
 <details> <summary><b>✅ Output</b></summary>
 
 20
+
 </details> <details> <summary><b>🧠 Explanation</b></summary>
+
 - Assigning `a.x` creates an own property
 
 - Own properties take precedence over prototype properties
