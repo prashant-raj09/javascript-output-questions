@@ -135,3 +135,27 @@ Prashant
 - First argument becomes the context
 
 </details>
+
+## 📌 Question 7: this in Constructor Function
+```js
+function Person(name) {
+  this.name = name;
+}
+
+const p = new Person("Alex");
+console.log(p.name);
+```
+<details> <summary><b>✅ Output</b></summary>
+Alex
+</details> <details> <summary><b>🧠 Explanation</b></summary>
+
+- new creates a new object
+
+- this points to the newly created object
+
+</details>
+
+
+
+## ⭐ Interview Rule (Golden)
+- `this` is determined at call time, not at declaration time.
